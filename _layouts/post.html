@@ -22,7 +22,7 @@ layout: default
         <div id="disqus_container">
 			
             <!-- 多说评论框 start -->
-			<div class="ds-thread"  data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
+			<div class="ds-thread"  data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
 			<!-- 多说评论框 end -->
 			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 			<script type="text/javascript">
@@ -50,9 +50,9 @@ layout: default
         {% endfor %}
         </ul>
 
-        <h2>Opinion</h2>
+        <h2>Life</h2>
         <ul class="artical-list">
-        {% for post in site.categories.opinion%}
+        {% for post in site.categories.life%}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>
