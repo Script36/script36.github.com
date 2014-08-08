@@ -15,6 +15,6 @@ function fn() {
     if(sha=="9835cb2d43d04db168a82b6d3c1e055095f222c1")//love
 	{
 		addCookie("name","love",0);
-		window.navigate("/vip_entry/love.html");
+		window.location.href="/vip_entry/love.html";
 	}
 }
